@@ -78,4 +78,27 @@ public class TestYajmUtils {
         assertNull(remappedIdAndNameObject.name);
     }
 
+    @Test
+    public void testMapSameClass() throws Throwable {
+        IdAndNameObject idAndNameObject = new IdAndNameObject()
+                .withId(UUID.randomUUID().toString())
+                .withName(UUID.randomUUID().toString());
+
+        IdAndNameObject remapped = map(idAndNameObject, IdAndNameObject.class);
+        assertEquals(idAndNameObject.id, remapped.id);
+        assertEquals(idAndNameObject.name, remapped.name);
+    }
+
+    @Test
+    public void testCustomMapper() throws Throwable {
+        IdOnlyObject idOnlyObject = new IdOnlyObject().withId("lowercase");
+
+        IdOnlyObjectCCustomMapper idOnlyObjectCCustomMapper = map(idOnlyObject, IdOnlyObjectCCustomMapper.class);
+
+        assertEquals(idOnlyObject.id.toUpperCase(), idOnlyObjectCCustomMapper.idc);
+
+        IdOnlyObject remapped = map(idOnlyObjectCCustomMapper, IdOnlyObject.class);
+        assertEquals(idOnlyObjectCCustomMapper.idc.toLowerCase(), remapped.id);
+    }
+
 }
