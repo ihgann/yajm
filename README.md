@@ -16,6 +16,11 @@
 
 ## Background
 
+This project was created mostly as a learning experience, though it has proven
+useful in some side projects. The primary driver was to introduce an
+easy-to-use Java Mapper that could infer objects via field names and provide
+easy-to-write customizable mappings where inference wouldn't work.
+
 ## Install
 
 ```
