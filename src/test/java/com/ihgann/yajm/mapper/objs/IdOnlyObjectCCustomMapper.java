@@ -5,11 +5,14 @@ import com.ihgann.yajm.mapper.modifiers.IdOnlyObjectIdAndIdOnlyObjectCCustomMapp
 
 public class IdOnlyObjectCCustomMapper {
 
-    @Mapping(other = IdOnlyObject.class, fieldName = "id",
-            modifier = IdOnlyObjectIdAndIdOnlyObjectCCustomMapperIdc.class)
-    public String idc;
+  @Mapping(
+    other = IdOnlyObject.class,
+    fieldName = "id",
+    modifier = IdOnlyObjectIdAndIdOnlyObjectCCustomMapperIdc.class
+  )
+  public String idc;
 
-    public String getIdc() {
-        return this.idc;
-    }
+  public String getIdc() {
+    return this.idc;
+  }
 }

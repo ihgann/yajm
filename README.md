@@ -1,2 +1,35 @@
-# yajm
-yet-another-java-mapper
+# yet-another-java-mapper
+
+[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![Build Status](https://travis-ci.org/ihgann/yajm.svg?branch=master)](https://travis-ci.org/ihgann/yajm)
+[![codecov](https://codecov.io/gh/ihgann/yajm/branch/master/graph/badge.svg)](https://codecov.io/gh/ihgann/yajm)
+
+> A small Java Mapper utility for easy-to-use data object mappings.
+
+## Table of Contents
+
+- [Background](#background)
+- [Install](#install)
+- [Maintainers](#maintainers)
+- [Contribute](#contribute)
+- [License](#license)
+
+## Background
+
+## Install
+
+```
+mvn clean install
+```
+
+## Maintainers
+
+[@ihgann](https://github.com/ihgann)
+
+## Contribute
+
+PRs accepted.
+
+## License
+
+MIT © 2018 Ian Gann

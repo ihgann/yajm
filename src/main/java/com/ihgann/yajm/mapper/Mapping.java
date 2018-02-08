@@ -9,8 +9,9 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 public @interface Mapping {
 
-    Class other();
-    String fieldName() default "";
-    Class modifier() default DefaultMapperModifier.class;
+  Class other();
 
+  String fieldName() default "";
+
+  Class modifier() default DefaultMapperModifier.class;
 }

@@ -2,11 +2,10 @@ package com.ihgann.yajm.mapper.objs;
 
 public class IdOnlyObject {
 
-    public String id;
+  public String id;
 
-    public IdOnlyObject withId(String id) {
-        this.id = id;
-        return this;
-    }
-
+  public IdOnlyObject withId(String id) {
+    this.id = id;
+    return this;
+  }
 }

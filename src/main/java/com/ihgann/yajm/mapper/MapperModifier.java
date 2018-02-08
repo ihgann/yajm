@@ -1,8 +1,8 @@
 package com.ihgann.yajm.mapper;
 
-public interface MapperModifier<U,V> {
+public interface MapperModifier<U, V> {
 
-    V aToB(U source, Class<V> destination);
+  V aToB(U source, Class<V> destination);
 
-    U bToA(V source, Class<U> destination);
+  U bToA(V source, Class<U> destination);
 }

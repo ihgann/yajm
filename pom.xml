@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ihgann.yajm</groupId>
+    <groupId>com.ihgann</groupId>
     <artifactId>yajm</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
@@ -16,6 +16,7 @@
         <java.target.version>1.8</java.target.version>
 
         <!-- Dependency/Plugin Versions -->
+        <com.coveo.fmt.mvn.plugin.version>2.2.0</com.coveo.fmt.mvn.plugin.version>
         <junit.version>4.12</junit.version>
         <maven.compiler.plugin.version>3.7.0</maven.compiler.plugin.version>
         <jacoco.maven.plugin.version>0.7.9</jacoco.maven.plugin.version>
@@ -56,6 +57,18 @@
                         <phase>test</phase>
                         <goals>
                             <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.coveo</groupId>
+                <artifactId>fmt-maven-plugin</artifactId>
+                <version>${com.coveo.fmt.mvn.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>format</goal>
                         </goals>
                     </execution>
                 </executions>
